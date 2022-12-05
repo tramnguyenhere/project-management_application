@@ -1,0 +1,24 @@
+@import '../../../global.scss';
+
+.project-list__wrapper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        width: fit-content;
+
+        button {
+        width: 100%;
+        border: none;
+        margin-bottom: 20px;
+        background-color: transparent;
+        padding: 0;
+
+        &:focus {
+            background-color: $--theme-primary-color;
+        }
+        }
+    }
+
+}
