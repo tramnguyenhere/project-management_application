@@ -2,21 +2,37 @@
 
 .project-item__wrapper {
     box-shadow: 0 0 3px 0 #000;
-    
     display: flex;
     justify-content: space-between;
     width: fit-content;
+    padding: 0;
 
-    .project-item__name {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 20px;
+    &:hover {
+        box-shadow: 0px 8px 8px 0px $--theme-shadow-color;
     }
 
-    .project-item__state {
-        font-size: 18px;
+    .project-item__details {
+        width: 100%;
+        border: none;
+        background-color: transparent;
 
+        &:focus, &:hover {
+            background-color: $--theme-primary-color;
+            cursor: pointer;   
+        }
+
+        .project-item__name {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        .project-item__state {
+            font-size: 18px;
+    
+        }
     }
+
 
     .project-item__details {
         display: flex;

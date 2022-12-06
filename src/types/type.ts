@@ -11,3 +11,7 @@ export interface ProjectItemType {
     name: string,
     state: Progress
 }
+
+export interface ItemDataType {
+    data: ProjectItemType
+}

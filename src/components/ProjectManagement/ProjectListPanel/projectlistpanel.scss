@@ -5,20 +5,10 @@
     margin: 0;
     padding: 0;
 
-    li {
+    button {
         width: fit-content;
-
-        button {
-        width: 100%;
-        border: none;
         margin-bottom: 20px;
-        background-color: transparent;
         padding: 0;
-
-        &:focus {
-            background-color: $--theme-primary-color;
-        }
-        }
+        border: none;
     }
-
 }

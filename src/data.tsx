@@ -1,6 +1,6 @@
 import { ProjectItemType } from "./types/type"
 
-const PROJECTS: Array<ProjectItemType> = [
+const PROJECTS: ProjectItemType[] = [
     {
         id: 1,
         name: 'Travel to Mars',
