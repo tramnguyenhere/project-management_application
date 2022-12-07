@@ -15,3 +15,8 @@ export interface ProjectItemType {
 export interface ItemDataType {
     data: ProjectItemType
 }
+
+export interface initialStateType {
+    data: ProjectItemType[],
+    selectedData: ProjectItemType[]
+}
