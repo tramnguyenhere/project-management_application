@@ -10,13 +10,14 @@ import {  useEffect, useState } from 'react'
 const ProjectListPanel = () => {
   const [selectedItems, setSelectedItems] = useState<any>([])
   const projectData = useAppSelector((state: RootState) => state.projectlist.data)
+  
   const dispatch = useAppDispatch()
   
   const selectionHandler = (e: any) => {
     e.preventDefault()
     
     const itemId = Number(e.target.id); 
-    const selectedItem = projectData.find(p => p.id === itemId)
+    const selectedItem: any= projectData.find((p:ProjectItemType) => p.id === itemId)
 
     const isDuplicated = selectedItems.find((p: ProjectItemType) => p.id === selectedItem?.id)
 
@@ -27,14 +28,14 @@ const ProjectListPanel = () => {
     else {
       setSelectedItems(selectedItems.concat(selectedItem));
       e.target.style.backgroundColor = '#308CCD'
-    } 
+    }
   }
-  
+
   useEffect(() => {
     dispatch(setSelectedList(selectedItems))
   },[dispatch, selectedItems])
-
-
+  
+  
 
   return (
       <div className='project-list__wrapper'>

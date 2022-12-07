@@ -6,7 +6,7 @@ import ControlButton from './ControlButton/ControlButton'
 import { useAppDispatch, useAppSelector } from '../../../redux/hooks'
 import { RootState } from '../../../redux/store'
 import { ProgressState, ProjectItemType } from '../../../types/type'
-import { changeStateSelectedList, setSelectedList } from '../../../redux/features/projectSlice'
+import { changeStateSelectedList } from '../../../redux/features/projectSlice'
 
 
 const ControlPanel = () => {
@@ -34,11 +34,8 @@ const ControlPanel = () => {
     selectedProjects.forEach((p: ProjectItemType) => {
       dispatch(changeStateSelectedList({ state: e.target.value, id: p.id }))
     })
-    dispatch(setSelectedList([]))
   }
-  
-  console.log(selectedProjects);
-  
+
   return (
     <div className='control_panel__wrapper'>
       {controlButtons.map(btn => (

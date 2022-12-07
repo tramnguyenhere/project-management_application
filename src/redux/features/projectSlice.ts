@@ -1,6 +1,5 @@
-import { createSlice, current} from "@reduxjs/toolkit";
+import { createSlice} from "@reduxjs/toolkit";
 import projectData from '../../data';
-import { ProjectItemType } from "../../types/type";
 
 const initialState = {
     data: projectData,
@@ -12,7 +11,8 @@ export const projectSlice = createSlice({
     initialState,
     reducers: {
         setProjectlist: (state,action) => {
-            state.data=action.payload
+            state.data = action.payload
+            
         },
         setSelectedList: (state, action) => { 
             state.selectedData=action.payload
