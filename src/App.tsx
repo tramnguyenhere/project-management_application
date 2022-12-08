@@ -1,10 +1,11 @@
 import './App.scss';
 import ProjectManagement from './components/ProjectManagement/ProjectManagement';
+import Heading from './components/UIComponents/Heading/Heading';
 
 function App() {
   return (
     <div className="App">
-      <h1>PROJECT MANAGEMENT</h1>
+      <Heading />
       <ProjectManagement />
     </div>
   );

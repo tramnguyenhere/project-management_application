@@ -1,14 +1,15 @@
 @import '../../../../global.scss';
 
 .control_button__wrapper {
-    padding: 50px 10px;
-    background-color: transparent;
-    border-radius: 3px;
-    border: 1px solid $--theme-primary-color;
+    padding: 40px 10px;
+    background-color: $--theme-secondary-color;
+    border-radius: 5px;
+    border: 2px solid $--theme-primary-color;
     color: $--theme-primary-color;
     width: 200px;
     margin-bottom: 20px;
     font-size: 20px;
+    box-shadow: 2px 2px 2px 2px $--theme-shadow-color;
 
     &:hover {
         background-color: $--theme-primary-color;

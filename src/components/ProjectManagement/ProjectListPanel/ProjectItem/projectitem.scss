@@ -1,11 +1,13 @@
 @import '../../../../global.scss';
 
 .project-item__wrapper {
-    box-shadow: 0 0 3px 0 #000;
+    box-shadow: 2px 2px 2px 2px $--theme-shadow-color;
     display: flex;
     justify-content: space-between;
     width: fit-content;
     padding: 0;
+    border-radius: 5px;
+    border: 2px solid $--theme-shadow-color;
 
     &:hover {
         box-shadow: 0px 8px 8px 0px $--theme-shadow-color;
@@ -18,7 +20,11 @@
         padding:20px 0px;
         width: 800px;
         border: none;
-        background-color: transparent;
+        background-color: $--theme-secondary-color;
+
+        @media only screen and (min-width: 768px) {
+            width: 600px;
+        }
 
         &:focus, &:hover {
             background-color: $--theme-primary-color;
