@@ -3,6 +3,9 @@
 Welcome to the frontend of our project management application! This application allows users to manage the state of their projects, including launching, finishing, or not starting.\
 Since this is only for practices, in the future, further development could be added.
 
+## Visual
+![Screenshot 2022-12-17 at 21 53 48](https://user-images.githubusercontent.com/57455557/208263864-f754cdf9-bcca-4f0e-b9a6-4cede4af7a21.png)
+
 ## Demo
 
 [https://main--project-management-app-tramnguyen.netlify.app/](https://main--project-management-app-tramnguyen.netlify.app/)
